@@ -154,13 +154,9 @@ def ask_user(message):
 
 def game_number_with_ask_user():
     if v_count_games > 1:
-        if not ask_user('Play again? Y/N: '):
-            return False
-        return True
+        return ask_user('Play again? Y/N: ')
     else:
-        if not ask_user('Ready to play? Y/N: '):
-            return False
-        return True
+        return ask_user('Ready to play? Y/N: ')
 
 
 v_again = 'Y'
